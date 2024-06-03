@@ -10,6 +10,13 @@
     opacity: 1;
 }
 
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 
 .gradientColorContainer__header{
     position: absolute;
