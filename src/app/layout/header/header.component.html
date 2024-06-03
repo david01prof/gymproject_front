@@ -1,6 +1,6 @@
-<div class="card">
+<div class="p-5 border-round-sm mb-3">
     <p-menubar [model]="items">
-        <ng-template pTemplate="start">
+        <ng-template pTemplate="start" class="text-8xl">
             GYMDATAMANAGER
         </ng-template>
         <ng-template pTemplate="item" let-item let-root="root">
@@ -21,10 +21,10 @@
     </p-menubar>
 </div>
 
-<div class="gradientColorContainer__header">
-    <div class="content__header">
-        <p class="title__header">A QUE ESTAS ESPERANDO</p>
-        <p class="subtitle__header">UNETE A NUESTRA COMUNIDAD</p>
+<div class="absolute left-0 right-0 w-full h-25rem gradientColorContainer__header">
+    <div class="absolute w-full h-auto content__header">
+        <p class="text-4xl font-light">A QUE ESTAS ESPERANDO</p>
+        <p class="text-4xl font-medium">UNETE A NUESTRA COMUNIDAD</p>
 
         <p-button label="Empezar" [raised]="true" severity="secondary"/>
     </div>

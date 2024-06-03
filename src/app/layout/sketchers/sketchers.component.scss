@@ -1,67 +1,22 @@
 .container_sketchers{
-    display: block;
-
-    position: absolute;
     bottom: -10rem;
-
-    width: 100%;
-    height: 261px;
-
-    display: flex;
-    justify-content: center;
 }
 
 .item_sketcher{
-    flex-basis: 33%;
-
-    position: relative;
-    display: inline-block;
-
     rotate: 14deg;
-    overflow: hidden;
 }
 
 .image_sketcher{
-    display: block;
     margin: -3px auto;
-
-    width: 280px;
-    height: 200px;
 }
 
 .title_sketcher{
-    position: absolute;
     top: 1.5rem;
     left: 49%;
     
     transform: translate(-50%, -50%);
-    padding: 10px;
     rotate: 331deg;
 
     font-family: "Bangers", system-ui;
-    font-weight: 400;
     font-style: normal;
-    font-size: 1.6rem;
 }
-
-
-.image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .image-container img {
-    display: block;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
