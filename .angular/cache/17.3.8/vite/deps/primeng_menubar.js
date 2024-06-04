@@ -1,11 +1,11 @@
 import {
-  BaseIcon
-} from "./chunk-RIRDV3GH.js";
-import {
   RouterLink,
   RouterLinkActive,
   RouterModule
 } from "./chunk-4LQKY6OS.js";
+import {
+  BaseIcon
+} from "./chunk-RIRDV3GH.js";
 import "./chunk-ULB4IK7H.js";
 import {
   Ripple,

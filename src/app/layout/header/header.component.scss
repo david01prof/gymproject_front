@@ -1,23 +1,19 @@
 :host ::ng-deep .p-menubar { 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    width: 100%;
-
     background-color: white;
-    opacity: 1;
 }
 
-.gradientColorContainer__header{
-    top: 58px;
+.contentHeader{
+    height: 34rem;
+    background-color: #F4F4F4;
+}
 
-    background: rgb(245,245,245);
+.backgroundGradient{
     background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(155,158,156,1) 47%, rgba(103,103,103,1) 100%);
+
+    top: 3.75rem;
+    overflow: hidden;
 }
 
-.content__header{
-    left: 74px;
-    top: 55px;
+.containerSketchers{
+    bottom: -50px;
 }

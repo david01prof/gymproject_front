@@ -1,32 +1,48 @@
-<div class="p-5 border-round-sm mb-3">
-    <p-menubar [model]="items">
-        <ng-template pTemplate="start" class="text-8xl">
-            GYMDATAMANAGER
-        </ng-template>
-        <ng-template pTemplate="item" let-item let-root="root">
-            <a pRipple class="flex align-items-center p-menuitem-link">
+<div class="relative contentHeader">
+    <div class="block absolute w-full left-0">
+        <p-menubar [model]="items">
+            <ng-template pTemplate="start" class="text-8xl"> GYMDATAMANAGER </ng-template>
+            <ng-template pTemplate="item" let-item let-root="root">
+              <a pRipple class="flex align-items-center p-menuitem-link">
                 <span [class]="item.icon"></span>
                 <span class="ml-2">{{ item.label }}</span>
-                <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
-                <span *ngIf="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span>
-                <i *ngIf="item.items" [ngClass]="['pi', root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto']"></i>
-            </a>
-        </ng-template>
-        <ng-template pTemplate="end">
-            <div class="flex align-items-center gap-2">
-                <input type="text" pInputText placeholder="Search" class="w-8rem sm:w-auto" />
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
-            </div>
-        </ng-template>
-    </p-menubar>
-</div>
-
-<div class="absolute left-0 right-0 w-full h-25rem gradientColorContainer__header">
-    <div class="absolute w-auto h-auto content__header">
-        <p class="text-4xl font-light">A QUE ESTAS ESPERANDO</p>
-        <p class="text-4xl font-medium">UNETE A NUESTRA COMUNIDAD</p>
-
-        <p-button label="Empezar" [raised]="true" severity="secondary"/>
+                <p-badge
+                  *ngIf="item.badge"
+                  [ngClass]="{ 'ml-auto': !root, 'ml-2': root }"
+                  [value]="item.badge"
+                />
+                <span
+                  *ngIf="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span
+                >
+                <i *ngIf="item.items" [ngClass]="['pi',root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto']"></i>
+              </a>
+            </ng-template>
+            <ng-template pTemplate="end">
+              <div class="flex align-items-center gap-2">
+                <input
+                  type="text"
+                  pInputText
+                  placeholder="Search"
+                  class="w-8rem sm:w-auto"
+                />
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"  shape="circle" />
+              </div>
+            </ng-template>
+          </p-menubar>
     </div>
-    <app-sketchers></app-sketchers>
+
+    <div class="block absolute w-full left-0 h-25rem backgroundGradient">
+
+        <div class="inline-block relative ml-8 mt-8">
+            <p class="text-4xl font-light">A QUE ESTAS ESPERANDO</p>
+            <p class="text-4xl font-medium">UNETE A NUESTRA COMUNIDAD</p>
+
+            <p-button label="Empezar" [raised]="true" severity="secondary" />
+        </div>
+
+    </div>
+
+    <div class="block absolute w-full bottom-0 containerSketchers">
+      <app-sketchers></app-sketchers>
+    </div>
 </div>
